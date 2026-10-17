@@ -1,0 +1,35 @@
+parameter,reference_value,unit,status,provenance_note
+rho_R,0.035,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+alpha_E,0.07,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+alpha_C,0.02,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+k_N,0.085,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+d_N,0.08,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+q_N,0.095,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+k_P,0.055,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+d_P,0.052,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+q_P,0.04,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+k_G,0.03,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+d_G,0.028,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+q_G,0.035,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+c_E,0.05,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+c_B,0.03,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+d_C,0.18,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+lambda_B,0.018,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+clear_B,0.11,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+K_clear,0.4,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+h0,0.00135,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+beta_N,1.55,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+beta_G,1.35,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+beta_B,1.1,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+beta_C,0.75,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+beta_F,0.9,normalized/day or dimensionless,provisional structural coefficient,Not fitted; varied in sensitivity analysis
+frailty,0.35,normalized/day or dimensionless,provisional scenario/control coefficient,Not fitted; varied in sensitivity analysis
+dose_intensity,1.0,normalized/day or dimensionless,provisional scenario/control coefficient,Not fitted; varied in sensitivity analysis
+gcsf,0.0,normalized/day or dimensionless,provisional scenario/control coefficient,Not fitted; varied in sensitivity analysis
+prophylaxis,0.0,normalized/day or dimensionless,provisional scenario/control coefficient,Not fitted; varied in sensitivity analysis
+initial_R,0.92,normalized,structural initial condition,Proof-of-concept
+initial_N,0.95,normalized,structural initial condition,Proof-of-concept
+initial_P,0.94,normalized,structural initial condition,Proof-of-concept
+initial_G,0.92,normalized,structural initial condition,Proof-of-concept
+reversible_boundary,0.72,stability index,provisional computational boundary,Not a clinical threshold
+partial_boundary,0.62,stability index,provisional computational boundary,Not a clinical threshold
