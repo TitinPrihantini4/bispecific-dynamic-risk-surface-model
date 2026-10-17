@@ -1,0 +1,16 @@
+{
+  "neutrophil_nadir": 0.7238378271078689,
+  "neutrophil_nadir_day": 74.5,
+  "marrow_nadir": 0.7729524682752439,
+  "platelet_nadir": 0.7689786098237172,
+  "immune_nadir": 0.7610504766083869,
+  "minimum_stability": 0.7084827773565672,
+  "minimum_stability_day": 74.60000000000001,
+  "recovery_day_N_ge_0_75": 80.5,
+  "infection_risk_output": 0.34158373440628576,
+  "final_controlled_prob": 0.34458617591566637,
+  "final_strained_prob": 0.5017390208359556,
+  "final_overloaded_prob": 0.15367480324837807,
+  "days_below_0_72": 10.200000000000003,
+  "days_below_0_62": 0.0
+}
