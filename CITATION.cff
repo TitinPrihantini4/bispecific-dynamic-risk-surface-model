@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this repository or its computational model, please cite it using the metadata below."
+
+title: "Dynamic Risk Surface Modelling of Cytopenia Recovery and Infection Vulnerability During Bispecific Antibody Therapy in High-Risk Lymphoma"
+
+type: software
+
+authors:
+  - given-names: "Prihantini"
+
+repository-code: "https://github.com/TitinPrihantini4/bispecific-dynamic-risk-surface-model"
+
+abstract: >-
+  This repository contains the executable code, model inputs,
+  model-generated outputs, figures, and manuscript for a
+  literature-parameterized computational proof-of-concept of
+  cytopenia recovery and infection vulnerability during
+  bispecific-antibody therapy. The framework integrates a
+  nonlinear dynamic reserve-stress-hazard model with scenario
+  analysis, global and local sensitivity analysis, stochastic
+  uncertainty propagation, latent-regime summaries, numerical
+  robustness assessment, synthetic mechanism recovery, and
+  structural exposure-schedule sensitivity. No patient-level
+  clinical data were used for model fitting or validation, and
+  the reported numerical outputs should not be interpreted as
+  observed clinical incidences, validated risk estimates,
+  treatment effects, or clinical decision thresholds.
+
+keywords:
+  - "bispecific antibody"
+  - "cytopenia"
+  - "dynamic risk surface"
+  - "infection vulnerability"
+  - "mathematical modelling"
+  - "regime switching"
+  - "ordinary differential equations"
+  - "computational modelling"
+
+license: "MIT"
