@@ -2,25 +2,25 @@
 
 ## Overview
 
-This repository contains the computational model, input assumptions, model-generated results, figures, and manuscript associated with the study:
+This repository contains the computational model, input assumptions, model-based results, figures, and manuscript associated with the study:
 
 **“Dynamic Risk Surface Modelling of Cytopenia Recovery and Infection Vulnerability During Bispecific Antibody Therapy in High-Risk Lymphoma.”**
 
-The study is a **literature-parameterized computational proof-of-concept** designed to examine the dynamic relationship between cytopenia recovery and broader infection vulnerability during bispecific-antibody therapy.
+The study is a **literature-parameterized computational proof-of-concept** designed to examine the dynamic relationship between cytopenia recovery and broader infection vulnerability during bispecific antibody therapy.
 
-No patient-level clinical data were used for model fitting, parameter estimation, or validation. All numerical results in this repository are outputs of the specified mathematical model and computational experiments and should not be interpreted as observed clinical incidences, validated risk estimates, treatment effects, or clinical decision thresholds.
+No patient level clinical data were used for model fitting, parameter estimation, or validation. All numerical results in this repository are outputs of the specified mathematical model and computational experiments and should not be interpreted as observed clinical incidences, validated risk estimates, treatment effects, or clinical decision thresholds.
 
 ---
 
 ## Study Objective
 
-The study examines whether a dynamic reserve–stress–hazard system can represent and interrogate time-dependent separation between cytopenia depth and broader infection vulnerability, while identifying structural assumptions and parameters that materially influence this behaviour.
+The study examines whether a dynamic reserve stress hazard system can represent and interrogate time dependent separation between cytopenia depth and broader infection vulnerability, while identifying structural assumptions and parameters that materially influence this behaviour.
 
-The framework is intended for hypothesis generation, mathematical interrogation, reproducibility, and future observed-data calibration rather than bedside prediction or treatment recommendation.
+The model is intended for hypothesis mathematical interrogation, reproducibility, and future observed data calibration rather than bedside prediction or treatment recommendation.
 
 ---
 
-## Mathematical Framework
+## Mathematical Model
 
 The model contains seven continuous state variables representing:
 
@@ -34,19 +34,19 @@ The model contains seven continuous state variables representing:
 
 These states are coupled through a nonlinear ordinary differential equation (ODE) system.
 
-Cumulative model-generated infection risk is obtained from the cumulative hazard as:
+Cumulative model-based infection risk is obtained from the cumulative hazard as:
 
 `P_inf(t) = 1 - exp[-H(t)]`
 
-A computational stability coordinate combines reserve preservation with inflammatory and microbial burden. A provisional three-state latent-regime representation summarizes the trajectory as **controlled**, **strained**, or **overloaded**.
+A computational stability coordinate combines reserve preservation with inflammatory and microbial burden. A provisional three state latent regime representation summarizes the trajectory as **controlled**, **strained**, or **overloaded**.
 
-The latent-state probabilities are numerical model summaries and are not empirically estimated clinical-state prevalences.
+The latent state probabilities are numerical model summaries and are not empirically estimated clinical state prevalences.
 
 ---
 
 ## Treatment-Stress Forcing
 
-Treatment-associated effects are represented using a normalized, dimensionless structural forcing function `E(t)`.
+Treatment associated effects are represented using a normalized, dimensionless structural forcing function `E(t)`.
 
 `E(t)` is **not** intended to represent:
 
@@ -69,20 +69,20 @@ The executable workflow includes:
 
 1. 84-day reference simulation
 2. Prespecified scenario perturbations
-3. Frailty–dose-intensity dynamic risk surface
-4. Global sensitivity analysis using 600 Latin-hypercube parameter sets and PRCC
+3. Frailty dose intensity dynamic risk surface
+4. Global sensitivity analysis using 600 Latin hypercube parameter sets and PRCC
 5. Local elasticity analysis
 6. 500-run stochastic perturbation analysis
-7. Latent-regime trajectory analysis
-8. Synthetic AIC/BIC mechanism-recovery experiment
+7. Latent regime trajectory analysis
+8. Synthetic AIC/BIC mechanism recovery experiment
 9. Numerical robustness assessment
-10. Structural exposure-schedule sensitivity analysis
+10. Structural exposure schedule sensitivity analysis
 
-The synthetic mechanism-recovery experiment uses pseudo-observations generated from the mechanistic reference trajectory and therefore represents an **internal structural recovery check**, not external or clinical validation.
+The synthetic mechanism recovery experiment uses pseudo observations based on the mechanistic reference trajectory and therefore represents an **internal structural recovery check**, not external or clinical validation.
 
 ---
 
-## Selected Model-Generated Results
+## Selected Model-Based Results
 
 Under the declared reference parameterization:
 
@@ -92,9 +92,9 @@ Under the declared reference parameterization:
 - Immune-competence nadir: **0.761**
 - Minimum computational stability: **0.708** at day **74.6**
 - Time below the provisional `S = 0.72` boundary: **10.2 model-days**
-- Model-generated 84-day cumulative infection-risk output: **0.342 (34.2%)**
+- Model-based 84-day cumulative infection-risk output: **0.342 (34.2%)**
 
-At day 84, the model-generated latent-state probabilities were:
+At day 84, the model-based latent state probabilities were:
 
 - Controlled: **0.345**
 - Strained: **0.502**
@@ -108,7 +108,7 @@ These values are mathematical outputs under the declared model assumptions. They
 
 Global sensitivity was evaluated using **600 Latin-hypercube samples**.
 
-Leading PRCCs for the model-generated 84-day infection-risk output included:
+Leading PRCCs for the model-based 84-day infection risk output included:
 
 - Frailty: **0.963**
 - Baseline hazard (`h0`): **0.963**
@@ -117,7 +117,7 @@ Leading PRCCs for the model-generated 84-day infection-risk output included:
 - Relative dose intensity: **0.691**
 - Microbial clearance (`clear_B`): **-0.763**
 
-A separate **500-run stochastic perturbation analysis** produced a median model-generated risk of **34.9%**, with a 2.5th–97.5th percentile range of **27.3%–42.2%**.
+A separate **500-run stochastic perturbation analysis** produced a median model-based risk of **34.9%**, with a 2.5th-97.5th percentile range of **27.3%-42.2%**.
 
 This range represents simulation uncertainty under the declared perturbation assumptions and is **not a clinical confidence or prediction interval**.
 
@@ -125,9 +125,9 @@ This range represents simulation uncertainty under the declared perturbation ass
 
 ## Structural Schedule Sensitivity
 
-Model behaviour was materially dependent on the assumed timing of the normalized treatment-stress forcing.
+Model behaviour was materially dependent on the assumed timing of the normalized treatment stress forcing.
 
-| Structural forcing schedule | N nadir | Minimum S | Model-generated risk |
+| Structural forcing schedule | N nadir | Minimum S | Model-based risk |
 |---|---:|---:|---:|
 | Reference q14 | 0.724 | 0.708 | 0.342 |
 | Weekly after step-up | 0.555 | 0.552 | 0.461 |
